@@ -1,0 +1,9 @@
+siteTitle = "Lambda Ops"
+siteDescr = ""
+siteAuthor = "Kyle Kelley"
+
+siteTwitterUrl = "https://twitter.com/rgbkrk"
+siteGithubUrl = "https://github.com/rgbkrk"
+siteEmailUrl = "mailto:rgbkrk@gmail.com"
+
+linkPrefix = "/lambda"
