@@ -3,7 +3,7 @@ layout: post
 title:  "Instant Temporary IPython Notebooks"
 date:   2014-11-02 20:01
 categories: IPython, Jupyter
-permalink: "/ipythonjupyter-tmpnb-debuts/"
+path: "/ipythonjupyter-tmpnb-debuts/"
 ---
 
 It's about time I write about [tmpnb](https://github.com/jupyter/tmpnb), a project the Jupyter/IPython developers have been working on. [Brian Granger](https://twitter.com/ellisonbg), one of the project leads, has been asking me over the past few months about enabling some more ambitious use cases of our Docker containers within [IPython](https://registry.hub.docker.com/repos/ipython/) and [Jupyter](https://registry.hub.docker.com/repos/jupyter/):
@@ -19,7 +19,7 @@ It's about time I write about [tmpnb](https://github.com/jupyter/tmpnb), a proje
 myrand=`head -c 30 /dev/urandom | xxd -p`
 cont=$( docker run -it -d -P -e RAND_BASE=$myrand jupyter/demo )
 port=$( docker port $cont 8888 | cut -d":" -f2 )
- 
+
 # proxy on         *:8000
 # admin on 127.0.0.1:8001
 curl -H "Authorization: token $CONFIGPROXY_AUTH_TOKEN" \

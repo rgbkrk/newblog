@@ -4,7 +4,7 @@ title:  "Ops Lessons on Instant Temporary IPython Notebooks"
 date:   2015-01-20 14:59
 categories: ops, ipython, ephemeral, temporary, tmpnb, notebooks, lessons, jupyter
 tags: featured
-permalink: "/ops-lessons-and-instant-temporary-ipython-jupyter-notebooks/"
+path: "/ops-lessons-and-instant-temporary-ipython-jupyter-notebooks/"
 ---
 For the past four months, the Jupyter developers -- in collaboration with [Rackspace](https://developer.rackspace.com), [Nature](http://www.nature.com/news/toolbox), and [O'Reilly Media](http://www.oreilly.com/) -- have been working on several experiments to give developers, data scientists, and researchers instant access to IPython Notebooks.
 
@@ -93,7 +93,7 @@ https://tmpnb.org/user/FKlVK3haOQRF/notebooks/SharingEffects.ipynb
 
 That link *won't actually work* for you, because the server is long gone. After a user has left their notebook server, it gets culled. Gone. Caput. Killed. Need to make room for new users and have plenty of fresh sandboxes.
 
-While I would *love* to enable people to do this, we probably need an alternate way to share these temporary calculations. I've used it myself and [wished for a way to get it directly on to nbviewer](https://twitter.com/rgbkrk/status/557942542063652864). Posting static content isn't the same as giving someone the ability to remix your code though. For now, this works and has no bearing on the Nature demo. 
+While I would *love* to enable people to do this, we probably need an alternate way to share these temporary calculations. I've used it myself and [wished for a way to get it directly on to nbviewer](https://twitter.com/rgbkrk/status/557942542063652864). Posting static content isn't the same as giving someone the ability to remix your code though. For now, this works and has no bearing on the Nature demo.
 
 ### Pool user containers ahead of time
 

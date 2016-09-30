@@ -3,7 +3,7 @@ layout: post
 title:  "One Weird Kernel Trick"
 date:   2014-06-16 20:01
 categories: IPython, Jupyter, security
-permalink: "/cross-origin-websocket-hijacking-of-ipython/"
+path: "/cross-origin-websocket-hijacking-of-ipython/"
 ---
 
 # Hijacking the IPython Notebook's WebSockets
@@ -74,7 +74,7 @@ If a site can use a kernel without your knowledge, they can run *anything* they 
 
 The vulnerability was fixed in time for the IPython 2.0 release (April 2014) and backported for the 1.x series (1.2 and above), as part of [#4845](https://github.com/ipython/ipython/pull/4845). We simply verify that the origin of the request matches the host. To make sure this light amount of protection happened by default I also submitted a [pull request to the tornado web framework](https://github.com/tornadoweb/tornado/pull/980).
 
-This vulnerability is registered with 
+This vulnerability is registered with
 CVE ID [CVE-2014-3429](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3429).
 
 ## Mitigations
@@ -97,7 +97,7 @@ Verify password:
 Out[2]: 'sha1:67c9e60bb8b6:9ffede0825894254b2e042ea597d771089e11aed'
 ```
 
-If you're stuck on an old version and haven't upgraded, please do! You'll also get access to IPython widgets if you upgrade to 2.x. 
+If you're stuck on an old version and haven't upgraded, please do! You'll also get access to IPython widgets if you upgrade to 2.x.
 
 ## Lightning Talk at SciPy 2014
 
@@ -113,11 +113,11 @@ Doing so ran some deviously playful AppleScript that [Min](https://twitter.com/m
 
 ```JavaScript
 var code = '%%bash\n' +
-           'osascript -e \'tell application "Photo Booth" to activate\n' + 
-           'delay 6\n' + 
+           'osascript -e \'tell application "Photo Booth" to activate\n' +
+           'delay 6\n' +
            'tell application "Photo Booth"\n' +
-           'activate\n' + 
-           'tell application "System Events" to keystroke return using {command down}\n' + 
+           'activate\n' +
+           'tell application "System Events" to keystroke return using {command down}\n' +
            'end tell\n\'';
 ```
 

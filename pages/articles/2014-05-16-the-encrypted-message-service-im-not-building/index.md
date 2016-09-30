@@ -3,7 +3,7 @@ layout: post
 title:  "The Encrypted Message Service I'm Not Building"
 date:   2014-05-16 20:01
 categories: Encryption, messaging
-permalink: "/the-encrypted-message-service-im-not-building/"
+path: "/the-encrypted-message-service-im-not-building/"
 ---
 
 Every time I need to share a credential (password, API Key, etc.) for a shared account I'm faced with a dilemma. How do I pass someone a secret, encrypted just for them? Public keys are an obvious choice. What if they're not using GPG though? What else does a typical developer have?
@@ -20,7 +20,7 @@ It's pretty simple to do this.
 ```bash
 # Get the user's keys, use the last key
 wget https://github.com/$user.keys --quiet -qO- | tail -n 1 > $pubkey
- 
+
 # Convert to a pem file
 ssh-keygen -f $pubkey -e -m PKCS8 > $pubkey.pem
 

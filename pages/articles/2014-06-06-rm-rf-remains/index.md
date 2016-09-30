@@ -4,7 +4,7 @@ title:  "rm -rf remains"
 date:   2014-06-06 20:01
 categories: Linux tomfoolery
 tags: featured
-permalink: "/rm-rf-remains/"
+path: "/rm-rf-remains/"
 ---
 
 Just for fun, I decided to launch a new Linux server and run `rm -rf /` as root to see what remains. As I found out, `rm` lives in the future with idiots like me, so you have to specify `--no-preserve-root` to kick this exercise off.
@@ -18,7 +18,7 @@ After committing this act of tomfoolery, great utilities like
 * `/bin/chmod`
 * `/usr/bin/file`
 
-will all be gone! You should still have your connection over SSH as well as your existing bash session. This means you have all the bash builtins, like `echo`. 
+will all be gone! You should still have your connection over SSH as well as your existing bash session. This means you have all the bash builtins, like `echo`.
 
 ## Becoming Bash McGyver
 
@@ -228,4 +228,3 @@ Through college and career, flipping through this book has always showed me some
 
 <img src="https://ir-na.amazon-adsystem.com/e/ir?t=lamops-20&l=as2&o=1&a=0596003307" width="1" height="1" border="0" style="border:none !important; margin:0px !important;" />
 <img src="https://ir-na.amazon-adsystem.com/e/ir?t=lamops-20&l=ur2&o=1" width="1" height="1" border="0" style="border:none !important; margin:0px !important;" />
-

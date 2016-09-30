@@ -3,7 +3,7 @@ layout: post
 title:  "No NoSQL"
 date:   2014-06-21 20:01
 categories: NoSQL
-permalink: "/no-nosql/"
+path: "/no-nosql/"
 ---
 
 Can we stop saying NoSQL? I'm really tired of describing things by what they're not.
